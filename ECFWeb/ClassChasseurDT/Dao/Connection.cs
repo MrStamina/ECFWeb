@@ -19,7 +19,7 @@ namespace ClassChasseurDT.Dao
         {
             // creation de la connection
             SqlConnection sqlConnect = new SqlConnection();
-            ConnectionStringSettings oConfig = ConfigurationManager.ConnectionStrings["ConChasseur"];
+            ConnectionStringSettings oConfig = ConfigurationManager.ConnectionStrings["ChasseurDeTete"];
             // ConnectionStringSettings oConfig = ConfigurationManager.ConnectionStrings["ConGest"];
 
             // affectation de la chaine de connection extraite

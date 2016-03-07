@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="ChasseurDeTete.master.cs" Inherits="ECFWeb.ChasseurDeTete" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="StyleSheetChasseurDeTete.css" rel="stylesheet" />
+    <title>ChasseurDeTete</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <header>
+        <div >
+       
+        <asp:Image CssClass="Image" ID="ImageOncleSam" ImageUrl="~/Images/We-want-you-image.png" runat="server"  Width="294px" Height="232px" />
+        <h1>
+            HH-Management
+        </h1> 
+
+             </div>
+    </header>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="CPHAccueil" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="CPHLogin" runat="server">
+
+        </asp:ContentPlaceHolder>
+       <asp:ContentPlaceHolder ID="CPHCandidat" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="CPHEntreprise" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        <asp:ContentPlaceHolder ID="CPHCreationEntreprise" runat="server">
+        
+        </asp:ContentPlaceHolder>
+
+
+    </div>
+    </form>
+</body>
+</html>
