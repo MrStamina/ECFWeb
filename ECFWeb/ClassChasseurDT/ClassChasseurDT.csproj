@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C4299152-30BB-4726-8072-2B1A7F6AC654}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ClassChasseurDT</RootNamespace>
+    <AssemblyName>ClassChasseurDT</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Dao\Connection.cs" />
+    <Compile Include="Dao\DaoCandidat.cs" />
+    <Compile Include="Dao\DaoEntreprise.cs" />
+    <Compile Include="Dao\DaoExperience.cs" />
+    <Compile Include="Dao\DaoMissions.cs" />
+    <Compile Include="Dao\DaoPoleEmbauche.cs" />
+    <Compile Include="Dao\DaoSecteurActivite.cs" />
+    <Compile Include="Dao\DaoSituFam.cs" />
+    <Compile Include="Exceptions\DaoException.cs" />
+    <Compile Include="Exceptions\DAoExceptionAfficheMessage.cs" />
+    <Compile Include="Exceptions\DaoExceptionFinAppli.cs" />
+    <Compile Include="Metier\Activite.cs" />
+    <Compile Include="Metier\Candidat.cs" />
+    <Compile Include="Metier\Consultant.cs" />
+    <Compile Include="Metier\Contact.cs" />
+    <Compile Include="Metier\DiplomeTitre.cs" />
+    <Compile Include="Metier\Entreprise.cs" />
+    <Compile Include="Metier\Experience.cs" />
+    <Compile Include="Metier\LoginCandidat.cs" />
+    <Compile Include="Metier\LoginEntreprise.cs" />
+    <Compile Include="Metier\Mission.cs" />
+    <Compile Include="Metier\MotifFin.cs" />
+    <Compile Include="Metier\Niveau.cs" />
+    <Compile Include="Metier\PoleEmbauche.cs" />
+    <Compile Include="Metier\PosteRecherche.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Metier\Qualification.cs" />
+    <Compile Include="Metier\SituationContact.cs" />
+    <Compile Include="Metier\SituationFamiliale.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
