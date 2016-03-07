@@ -61,7 +61,7 @@
             <asp:Label CssClass="Label" ID="LabelPole" runat="server" Text="Votre secteur géographique"></asp:Label>
             <asp:DropDownList  CssClass="TextBox" ID="DropDownListPole" runat="server" AppendDataBoundItems="True" AutoPostBack="True"></asp:DropDownList>
         </p>
-        <asp:Panel Visible="false" CssClass="Panel" ID="PanelIdentification" runat="server" GroupingText="Informations de connexion">
+        <asp:Panel  CssClass="Panel" ID="PanelIdentification" runat="server" GroupingText="Informations de connexion">
             <p>
             <asp:Label CssClass="Label" ID="LabelIdentification" runat="server" Text="Identification de Connexion"></asp:Label>
             <asp:TextBox CssClass="TextBox" ID="TextBoxIdentification" TextMode="Email" runat="server"></asp:TextBox>

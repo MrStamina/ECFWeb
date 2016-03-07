@@ -82,6 +82,7 @@ namespace ECFWeb
                 else
                     polE.IdPole = Convert.ToSByte(DropDownListPole.SelectedIndex);
                 ent.DateCreation = DateTime.Now;
+
                 try
                 {
                     ent.IdEntreprise = DaoEntreprise.AddEntreprise(ent);

@@ -12,5 +12,22 @@ namespace ClassChasseurDT.Metier
         public string UserPwd { get; set; }
 
         public int IdEntreprise { get; set; }
+
+        public LoginEntreprise()
+        {
+
+        }
+        public override string ToString()
+        {
+            return base.ToString();
+        }
+        public override int GetHashCode()
+        {
+            return base.GetHashCode();
+        }
+        public override bool Equals(Object obj)
+        {
+            return obj is LoginEntreprise && ((LoginEntreprise)obj).IdEntreprise.Equals(this.IdEntreprise);
+        }
     }
 }
